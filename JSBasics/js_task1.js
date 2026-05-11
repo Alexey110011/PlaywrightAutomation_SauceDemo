@@ -46,10 +46,11 @@ console.log(true + false)  // 1        The same explanation
 
 console.log(1/0)           // Infinity Division by 0 returns Infinity
 
-console.log(-1/0)          // Infinity The same explanation
+console.log(-1/0)          // - Infinity The same explanation (but with '-' sign)
 
 console.log(" 15" + 5)     //  155     If JS sees string (" 15") and then sign +, and can cast string to number, it considers operation as 
-                           //          math operation (adding)
+                           //          math operation (adding), but in this case " 15" can't be casted to string because of whitespace before 15;
+                           //          so it just concatenates
 
 console.log(" 15 " - 5)    // 10       The same explanation (deduction) 
 
